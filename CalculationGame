@@ -1,4 +1,4 @@
-# File: Calculation_Game.py
+# File: CalculationGame.py
 
 import random
 import time
