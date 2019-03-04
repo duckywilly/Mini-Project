@@ -1,0 +1,27 @@
+# File: Calculation_Game.py
+
+import random
+import time
+
+point = 0
+
+start = time.time()
+
+for x in range(10):
+    a = random.randint(1,100)
+    
+    b = random.randint(1,100)
+    
+    ans = input(str(a) + '+' + str(b) + '= ')
+    
+    if (ans == str(a+b)):
+        point = 1 + point
+        print ("Point: " + str(point))
+        
+    else:
+        print("Correct Answer is: " + str(a+b))
+
+end = time.time()
+
+print ("Total Score: " + str(point))
+print("Time taken: %0.2f" %(end - start), "seconds")
